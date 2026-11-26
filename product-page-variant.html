@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>OfficeSupply Online - Kit Escritório Premium (Variante B)</title>
+    <link rel="stylesheet" href="style-variant.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>OfficeSupply Online</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Promoções</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="product-detail">
+            <div class="product-image">
+                <img src="img001.jpg" alt="Kit Escritório Premium">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">Kit Escritório Premium Clássico</h2>
+                <p class="product-category">Categoria: Kits Essenciais</p>
+                <div class="rating" aria-label="Avaliação 4,8 de 5">
+                    <span class="stars">★★★★★</span> <strong>4,8</strong>
+                    <a href="#avaliacoes">(127 avaliações)</a>
+                    <span class="badge">Mais vendido em Kits Essenciais</span>
+                </div>
+                <div class="product-price">
+                    <span class="old-price">Itens avulsos: R$ 339,60</span>
+                    <span class="current-price">R$ 299,90</span>
+                    <span class="saving">Você economiza R$ 39,70 (12%)</span>
+                    <span class="installments">ou 6x de R$ 49,98 sem juros</span>
+                </div>
+                <p class="product-description">
+                    Um kit completo com itens essenciais de alta qualidade para o seu dia a dia no escritório. Inclui canetas, cadernos, post-its e organizadores. Compre uma vez e equipe a sua mesa por meses: menos reposição, mais produtividade.
+                </p>
+                <p class="stock">Restam apenas 12 unidades em estoque</p>
+                <button class="add-to-cart-btn">Comprar agora – Frete grátis</button>
+                <ul class="trust">
+                    <li>🚚 Frete grátis acima de R$ 199</li>
+                    <li>↩️ 30 dias para trocar</li>
+                    <li>🔒 Compra 100% segura</li>
+                </ul>
+                <div class="product-features" id="avaliacoes">
+                    <h3>Características:</h3>
+                    <ul>
+                        <li>Canetas esferográficas de ponta fina</li>
+                        <li>Caderno capa dura A5</li>
+                        <li>Bloco de notas adesivas</li>
+                        <li>Organizador de mesa compacto</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="featured-products">
+            <h2>Outros Produtos que Você Pode Gostar</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="mouse.jpg" alt="Mouse Ergonômico Bluetooth">
+                    <h3>Mouse Ergonômico Bluetooth Silence</h3>
+                    <p class="card-category">Categoria: Tecnologia Essencial</p>
+                    <p class="card-price">R$ 149,90</p>
+                    <button class="add-to-cart-btn-small">Ver Detalhes</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 OfficeSupply Online</p>
+    </footer>
+
+    <script>
+
+window.dataLayer = window.dataLayer || [];
+    var AB_VARIANT = 'B_variante';
+    dataLayer.push({event:'ab_view', experiment:'produto_alta_margem_pdp', variant:AB_VARIANT});
+    document.querySelectorAll('.add-to-cart-btn').forEach(function(b){
+      b.addEventListener('click', function(){
+        dataLayer.push({event:'add_to_cart', experiment:'produto_alta_margem_pdp', variant:AB_VARIANT, item:'kit-escritorio-premium', value:299.90});
+      });
+    });
+    </script>
+</body>
+</html>
